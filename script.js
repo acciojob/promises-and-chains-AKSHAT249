@@ -1,8 +1,10 @@
-//your JS code here. If required.
 
 
 const  promise = (age, name) => { 
 	return new Promise( (resolve, reject) => {
+	if(age==0 || name.length==0){
+		reject("Invalid Data")
+	}	
 	if(age>18){
 		resolve(`Welcome, ${name}. You can vote.`)
 	}else{
@@ -17,15 +19,14 @@ function form_submit(event){
 	let age = document.getElementById("age").value;
 	let name = document.getElementById("name").value;
 
-	if(age==0 || name.length==0){
-		alert("Check Credentials")
+	// if(age==0 || name.length==0){
+	// 	alert("Check Credentials")
 
-	}
+	// }
 
 	promise(age,name).then( (data)=>{
-		console.log(data)
+		alert(data);
 
 	} )
 
 	
-
