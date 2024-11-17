@@ -8,7 +8,7 @@ const  promise = (age, name) => {
 	if(age>18){
 		resolve(`Welcome, ${name}. You can vote.`)
 	}else{
-		resolve(`Oh sorry ${name}. You aren't old enough.`)
+		reject(`Oh sorry ${name}. You aren't old enough.`)
 	}
 } )}
 
