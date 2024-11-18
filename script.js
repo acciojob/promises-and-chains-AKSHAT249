@@ -20,7 +20,7 @@ function form_submit(event){
 		
 
 	}
-	console.log("Promise is calling...")
+	
 	promise(age,name).then( (data)=>{
 		setTimeout( ()=> {
 			alert(data)
