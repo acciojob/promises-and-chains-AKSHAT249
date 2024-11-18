@@ -27,7 +27,11 @@ function form_submit(event){
 		},4000)
 		
 
-	} )
+	} ).catch( (error) => {
+        setTimeout( () => {
+            alert(error);
+        }, 4000)
+    });
 
 
 
